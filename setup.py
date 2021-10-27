@@ -1,9 +1,9 @@
 import os
 import telebot
 
-bot = telebot.TeleBot("1957971904:AAFNpwDXK8FnutqbPYjyrENXBeCyS9ODtr4")
+bot = telebot.TeleBot("")
 
-admin = 1880722910
+admin = 
 users = []
 
 @bot.message_handler(commands=["start"])
@@ -97,15 +97,6 @@ def send_message(message):
 	""")
 	
 	
-@bot.message_handler(commands=["frcstp"])
-def send_message(message):
-		if message.chat.id == admin:
-			bot.reply_to(message, "බොට් වරයා තව තත්පර 4 කින් වසා දැමෙනු ඇත")
-			bot.reply_to(message, "බොට් සාර්ථකව වසා ඇත.👍")
-		else:
-			bot.reply_to(message, "ඔබ මගේ නිර්මාතෘ හෝ ඇඩ්මින්වරයෙකු නොවේ!😠")
-
-
 @bot.message_handler(commands=["mngrpinf"])
 def send_message(message):
 	bot.reply_to(message, 
